@@ -5,7 +5,7 @@ from scrapers.check_word import contains_any_word, contains_any_word_reg
 
 
 
-def scrape_toscrape(logger):
+def scrape_habr(logger):
 
     url = "https://habr.com/ru/articles/"
     headers = Headers(browser='chrome', os='win').generate()

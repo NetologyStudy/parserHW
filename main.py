@@ -9,7 +9,7 @@ def main():
     logger.info("Запуск скрапинга")
     sleep(1)
     try:
-        data = habr.scrape_toscrape(logger)
+        data = habr.scrape_habr(logger)
         logger.info(f"Успешно собраны данные: {len(data)} элементов")
 
         with open("data/scraped_data.json", "w", encoding="utf-8") as f:
