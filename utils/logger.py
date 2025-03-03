@@ -1,12 +1,8 @@
 import logging
 import sys
-<<<<<<< HEAD
 
-=======
->>>>>>> b1054c3357017957c4acc652d3354e4f754fd45b
 
 def setup_logger(log_file="scraper.log"):
-
     logger = logging.getLogger(__name__)
     logger.setLevel(logging.INFO)
 
