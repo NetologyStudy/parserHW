@@ -1,11 +1,11 @@
 import logging
-import sys # Import the sys module
+import sys
+
 
 def setup_logger(log_file="scraper.log"):
 
     logger = logging.getLogger(__name__)
     logger.setLevel(logging.INFO)
-
 
     if not logger.handlers:
         formatter = logging.Formatter('%(asctime)s - %(levelname)s - %(message)s')

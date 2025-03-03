@@ -7,7 +7,6 @@ from time import sleep
 def main():
     logger = setup_logger()
     logger.info("Запуск скрапинга")
-    sleep(1)
     try:
         data = habr.scrape_habr(logger)
         logger.info(f"Успешно собраны данные: {len(data)} элементов")
